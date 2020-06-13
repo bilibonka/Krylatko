@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/modal.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 </head>
@@ -22,7 +23,7 @@
 		</div>
 		<nav class="phoneNumber">
 			<p>+7 (950) 733-31-70</p>
-			<a href="">Заказать обратный звонок</a>
+			<div class="header__call_modal">Заказать обратный звонок</div>
 		</nav>
 	</header>
 	<main>
@@ -30,12 +31,12 @@
 			<div class="firstBlockOffer wrapper wow animate__animated  animate__fadeInRight">
 				<h1>Сертифицированные детские бескаркасные автокресла</h1>
 				<p class="freeDelivery">с бесплатной доставкой по Челябинску</p>
-				<form action="">
+				<div class="blockFirstSection__form">
 						<p class="questionAboutRead">Нет времени читать?</p>
 						<p class="offer">Оставляйте номер, мы вам перезвоним!</p>
 						<input type="text" placeholder="Ваш телефон" class="inputNumber">
-						<button type="submit" class="buttonSendNumber inputNumber">Перезвоните мне</button>
-				</form>
+						<button class="buttonSendNumber inputNumber call_modalThanks">Перезвоните мне</button>
+				</div>
 			</div>
 			<img src="" alt="" class="backgroundFirstSection" data="img/header_background2.jpg">
 		</section>
@@ -102,7 +103,7 @@
 							</div>
 							<p>декабря!</p>
 						</div>
-						<button class="order">Заказать</button>
+						<button class="order header__call_modal">Заказать</button>
 					</div>
 				</div>
 			</div>
@@ -194,10 +195,10 @@
 					</div>
 					<p>Оставьте заявку сейчас и получите</p>
 					<h4>бесплатная доставка!</h4>
-					<form action="">
+					<div class="specialOfferDiscount__form">
 						<input type="text" placeholder="Ваш телефон" class="yourNumberPhone">
-						<button class="callMeBack">Перезвоните мне</button>
-					</form>
+						<button class="callMeBack call_modalThanks">Перезвоните мне</button>
+					</div>
 					<img src="" alt="" class="arrowDiscount" data="./img/arrowDiscount.svg">
 				</div>
 			</div>
@@ -255,7 +256,7 @@
 					<p class="addressBlock__pickUpChair">Забрать кресло можно по адресу</p>
 					<h3>Челябинск, ул. Академика Королева, 38</h3>
 					<p>или используйте</p>
-					<button class="addressBlock__freeDelivery">Бесплатная доставка</button>
+					<button class="addressBlock__freeDelivery header__call_modal">Бесплатная доставка</button>
 				</div>
 			</div>
 		</section>
@@ -278,7 +279,7 @@
 		<script>
 			new WOW().init();
 		</script>
-	
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
